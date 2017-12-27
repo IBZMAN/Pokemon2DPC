@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scene/MainMenu/NewQuitGame.unity
     guid: ea261189bd59de943981b5d46166cadd
   - enabled: 1
-    path: Assets/Scene/Starting Town.unity
+    path: Assets/Scene/StartingTown.unity
     guid: 2eb10257f19ecdd4896d2839f854238c
   - enabled: 1
-    path: Assets/Scene/Level 1.unity
+    path: Assets/Scene/Fuccsville.unity
     guid: dba79234b49c4a8408a68217cfe2cbf2
   - enabled: 1
     path: Assets/Scene/InsideHealthCentre.unity

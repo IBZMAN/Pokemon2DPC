@@ -2,7 +2,7 @@
 
 public class Player : Character
 {
-    Animator myAnimator;
+
 
     [SerializeField]
     private Sprite startingSprite;
@@ -30,7 +30,7 @@ public class Player : Character
     void Start ()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
-        myAnimator = GetComponent<Animator>();
+       
         gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;      
     }
 

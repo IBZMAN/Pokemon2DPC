@@ -22,7 +22,6 @@ public class BattleTriggerController : MonoBehaviour {
         {
             playerCamera.SetActive(false);
             battleCamera.SetActive(true);
-            Player Player = collision.gameObject.GetComponent<Player>();
             transform.localScale = new Vector2(5, 5);
             SceneManager.LoadScene(LoadNextLevel);         
         }
