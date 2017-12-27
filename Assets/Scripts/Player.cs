@@ -31,7 +31,7 @@ public class Player : Character
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
-        gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;      
+        gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;
     }
 
     void Update ()

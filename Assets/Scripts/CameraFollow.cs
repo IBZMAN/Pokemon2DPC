@@ -21,15 +21,18 @@ public class CameraFollow : MonoBehaviour
     [SerializeField]
     private Transform target;
 
+    [SerializeField]
+    public Vector3 offset;
+
     void LateUpdate()
-    {
+    {   
         if (restrictCamera)
         {
-            transform.position = new Vector3(Mathf.Clamp(target.position.x, xMin, xMax), Mathf.Clamp(target.position.y, yMin, yMax), transform.position.z);
+            transform.position = new Vector3(Mathf.Clamp(target.position.x + offset.x, xMin, xMax), Mathf.Clamp(target.position.y + offset.y, yMin, yMax), transform.position.z);
         }
         else
         {
-            transform.position = new Vector3(target.transform.position.x, target.transform.position.y, transform.position.z);
+            transform.position = new Vector3(target.transform.position.x + offset.x, target.transform.position.y + offset.y, transform.position.z);
         }
     }
 }

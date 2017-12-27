@@ -1,11 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class NewQuitGameController : MonoBehaviour {
 
-    [SerializeField] private string NextLevelToLoad;
+    [SerializeField]
+    private string NextLevelToLoad;
 
     private void Update()
     {
