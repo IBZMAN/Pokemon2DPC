@@ -20,6 +20,7 @@ public class Player : Character
     void Update ()
     {
         GetInput();
+        
 	}
 
     private void FixedUpdate()
@@ -36,6 +37,7 @@ public class Player : Character
             myAnimator.SetFloat("velY", myRigidBody.velocity.y);
             gameObject.GetComponent<SpriteRenderer>().sprite = northSprite;
             direction += Vector2.up;
+
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -55,7 +57,10 @@ public class Player : Character
             gameObject.GetComponent<SpriteRenderer>().sprite = eastSprite;
             direction += Vector2.right;
         }
+
     }
+    
+    
 
     private void Move()
     {
