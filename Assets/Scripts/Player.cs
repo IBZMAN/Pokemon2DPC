@@ -3,7 +3,6 @@
 public class Player : Character
 {
     Animator myAnimator;
-<<<<<<< HEAD
 
     [SerializeField]
     private Sprite startingSprite;
@@ -20,14 +19,18 @@ public class Player : Character
     [SerializeField]
     private Sprite westSprite;
 
-    private bool IsPressingShift
+    private bool IsPressingSprint
     {
         get
         {
-            return Input.GetKey(KeyCode.LeftShift);
+            return Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.Joystick1Button4);
         }
     }
 
+<<<<<<< HEAD
+    public Animation walkLeftAnim;
+
+=======
 =======
     public Sprite startingSprite;
     public Sprite northSprite;
@@ -42,18 +45,19 @@ public class Player : Character
     public Animation walkLeftAnim;
 >>>>>>> 8b1dd9bec34fcdf2fd4c5b234f653a249b62716f
 >>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02
+>>>>>>> master
     void Start ()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
-        gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;
-        
+        gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;      
     }
 
     void Update ()
     {
-<<<<<<< HEAD
         GetInput();     
+<<<<<<< HEAD
+=======
 =======
         GetInput();
 <<<<<<< HEAD
@@ -63,6 +67,7 @@ public class Player : Character
         
 >>>>>>> 8b1dd9bec34fcdf2fd4c5b234f653a249b62716f
 >>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02
+>>>>>>> master
 	}
 
     private void FixedUpdate()
@@ -74,11 +79,13 @@ public class Player : Character
     {
         direction = Vector2.zero;
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetAxisRaw("Vertical") > 0)
         {
-            myAnimator.SetFloat("velY", myRigidBody.velocity.y);
-            gameObject.GetComponent<SpriteRenderer>().sprite = northSprite;
+            //myAnimator.SetFloat("velY", myRigidBody.velocity.y);
+            ChangeSprite(northSprite);
             direction += Vector2.up;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -88,53 +95,61 @@ public class Player : Character
 
 >>>>>>> 8b1dd9bec34fcdf2fd4c5b234f653a249b62716f
 >>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02
+>>>>>>> master
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetAxisRaw("Horizontal") < 0)
         {
-            myAnimator.SetFloat("velX", myRigidBody.velocity.x);
-            gameObject.GetComponent<SpriteRenderer>().sprite = westSprite;
+            //myAnimator.SetFloat("velX", myRigidBody.velocity.x);
+            ChangeSprite(westSprite);
             direction += Vector2.left;
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetAxisRaw("Vertical") < 0)
         {
-            myAnimator.SetFloat("velY", myRigidBody.velocity.y);
-            gameObject.GetComponent<SpriteRenderer>().sprite = southSprite;
+            //myAnimator.SetFloat("velY", myRigidBody.velocity.y);
+            ChangeSprite(southSprite);
             direction += Vector2.down;
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetAxisRaw("Horizontal") > 0)
         {
-            myAnimator.SetFloat("velX", myRigidBody.velocity.x);
-            gameObject.GetComponent<SpriteRenderer>().sprite = eastSprite;
+            //myAnimator.SetFloat("velX", myRigidBody.velocity.x);
+            ChangeSprite(eastSprite);
             direction += Vector2.right;
         }
 
     }
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 
 =======
     private void GetAnimations()
     {
+>>>>>>> master
 
+    private void ChangeSprite(Sprite newSprite)
+    {
+        gameObject.GetComponent<SpriteRenderer>().sprite = newSprite;
+    }
 
+    private void GetAnimations()
+    {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            animation.Play("WalkDown");
+            //animation.Play("WalkDown");
         }
     }
     
 >>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02
     private void Move()
     {
-        if (IsPressingShift)
+        if (IsPressingSprint)
         {
             myRigidBody.velocity = direction.normalized * (speed + 3f);
         }
         else
         {
             myRigidBody.velocity = direction.normalized * speed;
-        }
-
-        //myRigidBody.velocity = direction.normalized * speed;
+        }   
     }
 
 }
