@@ -245,6 +245,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -260,7 +261,7 @@ Transform:
   m_LocalScale: {x: 0.7638955, y: 0.7638955, z: 0.7638955}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7965541
 MonoBehaviour:
@@ -7722,7 +7723,11 @@ Transform:
   - {fileID: 2022803243}
   - {fileID: 1823601651}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Scene/Starting Town.unity
   m_RootOrder: 0
+=======
+  m_RootOrder: 2
+>>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02:Assets/Scene/StartingTown.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1337890875
 GameObject:
@@ -12271,7 +12276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1973927594}
   m_Layer: 0
-  m_Name: TREES
+  m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

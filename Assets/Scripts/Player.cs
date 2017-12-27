@@ -2,16 +2,46 @@
 
 public class Player : Character
 {
-
     Animator myAnimator;
+<<<<<<< HEAD
+
+    [SerializeField]
+    private Sprite startingSprite;
+
+    [SerializeField]
+    private Sprite northSprite;
+
+    [SerializeField]
+    private Sprite eastSprite;
+
+    [SerializeField]
+    private Sprite southSprite;
+
+    [SerializeField]
+    private Sprite westSprite;
+
+    private bool IsPressingShift
+    {
+        get
+        {
+            return Input.GetKey(KeyCode.LeftShift);
+        }
+    }
+
+=======
     public Sprite startingSprite;
     public Sprite northSprite;
     public Sprite eastSprite;
     public Sprite southSprite;
     public Sprite westSprite;
+<<<<<<< HEAD
    
 
 
+=======
+    public Animation walkLeftAnim;
+>>>>>>> 8b1dd9bec34fcdf2fd4c5b234f653a249b62716f
+>>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02
     void Start ()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -22,8 +52,17 @@ public class Player : Character
 
     void Update ()
     {
+<<<<<<< HEAD
+        GetInput();     
+=======
         GetInput();
+<<<<<<< HEAD
 
+=======
+        GetAnimations();
+        
+>>>>>>> 8b1dd9bec34fcdf2fd4c5b234f653a249b62716f
+>>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02
 	}
 
     private void FixedUpdate()
@@ -40,6 +79,15 @@ public class Player : Character
             myAnimator.SetFloat("velY", myRigidBody.velocity.y);
             gameObject.GetComponent<SpriteRenderer>().sprite = northSprite;
             direction += Vector2.up;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+           
+
+
+>>>>>>> 8b1dd9bec34fcdf2fd4c5b234f653a249b62716f
+>>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -61,10 +109,23 @@ public class Player : Character
         }
 
     }
+<<<<<<< HEAD
 
+=======
+    private void GetAnimations()
+    {
+
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            animation.Play("WalkDown");
+        }
+    }
+    
+>>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02
     private void Move()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (IsPressingShift)
         {
             myRigidBody.velocity = direction.normalized * (speed + 3f);
         }
