@@ -107,6 +107,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -193,6 +194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   collectable: 0
+  force: {x: 0, y: 0}
+  body: {fileID: 0}
 --- !u!124 &124817039823692264
 Behaviour:
   m_ObjectHideFlags: 1
@@ -233,7 +236,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300138, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
