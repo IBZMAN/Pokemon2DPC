@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
-public abstract class Character : MonoBehaviour {
+public abstract class Character : MonoBehaviour
+{
 
     [SerializeField]
     protected float speed = 2;
