@@ -2923,7 +2923,6 @@ GameObject:
   - component: {fileID: 898687369}
   - component: {fileID: 898687367}
   - component: {fileID: 898687368}
-  - component: {fileID: 898687373}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2955,12 +2954,17 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 898687366}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b44fe51390b1df44bed528654da53ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  startingSprite: {fileID: 21300034, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
+  northSprite: {fileID: 21300000, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
+  eastSprite: {fileID: 21300096, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
+  southSprite: {fileID: 21300034, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
+  westSprite: {fileID: 21300064, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
 --- !u!50 &898687369
 Rigidbody2D:
   serializedVersion: 4
@@ -3066,23 +3070,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &898687373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 898687366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fafb6cb62e34a074f87d36e66b887886, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  northSprite: {fileID: 21300000, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
-  eastSprite: {fileID: 21300100, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
-  southSprite: {fileID: 21300034, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
-  westSprite: {fileID: 21300064, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
-  walkSpeed: 3
-  isAllowedToMove: 1
 --- !u!1001 &902032129
 Prefab:
   m_ObjectHideFlags: 0
