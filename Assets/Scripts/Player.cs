@@ -14,6 +14,7 @@ public class Player : Character
 	void Update ()
     {
         GetInput();
+        
 	}
 
     private void FixedUpdate()
@@ -30,6 +31,7 @@ public class Player : Character
         {
             myAnimator.SetFloat("velY", myRigidBody.velocity.y);
             direction += Vector2.up;
+
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -46,7 +48,10 @@ public class Player : Character
             myAnimator.SetFloat("velX", myRigidBody.velocity.x);
             direction += Vector2.right;
         }
+
     }
+    
+    
 
     private void Move()
     {
