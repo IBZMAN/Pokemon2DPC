@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4317969124502292}
   - component: {fileID: 212498733456058728}
-  - component: {fileID: 60598771677524782}
+  - component: {fileID: 61736870769916654}
   m_Layer: 0
   m_Name: Round Bush
   m_TagString: Untagged
@@ -41,8 +41,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &60598771677524782
-PolygonCollider2D:
+--- !u!61 &61736870769916654
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -63,43 +63,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 2.455, y: -1.185}
-      - {x: 2.615, y: -0.91499996}
-      - {x: 2.615, y: -0.45499998}
-      - {x: 2.605, y: -0.415}
-      - {x: 2.455, y: 0.035}
-      - {x: 2.435, y: 0.055}
-      - {x: 2.2749999, y: 0.36499998}
-      - {x: 2.2549999, y: 0.385}
-      - {x: 2.155, y: 0.585}
-      - {x: 0.98499995, y: 1.775}
-      - {x: 0.645, y: 1.9449999}
-      - {x: 0.085, y: 1.9449999}
-      - {x: 0.065, y: 1.925}
-      - {x: -0.275, y: 1.9449999}
-      - {x: -0.775, y: 1.9449999}
-      - {x: -0.79499996, y: 1.925}
-      - {x: -1.105, y: 1.755}
-      - {x: -1.125, y: 1.735}
-      - {x: -1.295, y: 1.5749999}
-      - {x: -1.3149999, y: 1.555}
-      - {x: -1.665, y: 1.415}
-      - {x: -2.0249999, y: 1.0849999}
-      - {x: -2.5249999, y: 0.385}
-      - {x: -2.685, y: 0.074999996}
-      - {x: -2.685, y: -0.625}
-      - {x: -2.665, y: -0.675}
-      - {x: -2.365, y: -1.305}
-      - {x: -1.905, y: -1.385}
-      - {x: -1.8549999, y: -1.635}
-      - {x: -1.635, y: -1.8449999}
-      - {x: -0.435, y: -1.985}
-      - {x: 1.405, y: -1.985}
-      - {x: 1.425, y: -1.9649999}
-      - {x: 1.775, y: -1.8449999}
-      - {x: 1.9649999, y: -1.635}
+  serializedVersion: 2
+  m_Size: {x: 5.67, y: 4.27}
+  m_EdgeRadius: 0
 --- !u!212 &212498733456058728
 SpriteRenderer:
   m_ObjectHideFlags: 1
