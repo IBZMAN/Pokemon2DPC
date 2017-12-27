@@ -10,8 +10,6 @@ public class PlayerController : MonoBehaviour
     Vector2 force;
     Rigidbody2D body;
    
-
- 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
