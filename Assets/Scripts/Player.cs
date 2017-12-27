@@ -59,7 +59,16 @@ public class Player : Character
 
     private void Move()
     {
-        myRigidBody.velocity = direction.normalized * speed;
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            myRigidBody.velocity = direction.normalized * (speed + 3f);
+        }
+        else
+        {
+            myRigidBody.velocity = direction.normalized * speed;
+        }
+
+        //myRigidBody.velocity = direction.normalized * speed;
     }
 
 }
