@@ -9,7 +9,9 @@ public class Player : Character
     public Sprite eastSprite;
     public Sprite southSprite;
     public Sprite westSprite;
-    public Animation walkLeftAnim;
+   
+
+
     void Start ()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -21,8 +23,7 @@ public class Player : Character
     void Update ()
     {
         GetInput();
-        GetAnimations();
-        
+
 	}
 
     private void FixedUpdate()
@@ -39,9 +40,6 @@ public class Player : Character
             myAnimator.SetFloat("velY", myRigidBody.velocity.y);
             gameObject.GetComponent<SpriteRenderer>().sprite = northSprite;
             direction += Vector2.up;
-           
-
-
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -63,17 +61,6 @@ public class Player : Character
         }
 
     }
-    private void GetAnimations()
-    {
-
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            animation.Play("WalkDown");
-        }
-    }
-    
-    
 
     private void Move()
     {
