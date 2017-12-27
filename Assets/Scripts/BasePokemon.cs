@@ -24,6 +24,7 @@ public class BasePokemon : MonoBehaviour
     {
         maxHP = HP;
     }
+
     void Update()
     {
 

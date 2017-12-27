@@ -2086,11 +2086,21 @@ Prefab:
     - target: {fileID: 212420118424779914, guid: 6e10b0d60d32d9a4ab0e107b41939e5c,
         type: 2}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1785170250179486, guid: 6e10b0d60d32d9a4ab0e107b41939e5c, type: 2}
       propertyPath: m_Name
       value: Side Fence (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 61367682070253028, guid: 6e10b0d60d32d9a4ab0e107b41939e5c,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 1.0797633
+      objectReference: {fileID: 0}
+    - target: {fileID: 61367682070253028, guid: 6e10b0d60d32d9a4ab0e107b41939e5c,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 2.45249
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e10b0d60d32d9a4ab0e107b41939e5c, type: 2}
@@ -3846,7 +3856,7 @@ Prefab:
     - target: {fileID: 212057156265624064, guid: c3dfb5513d8298a49ad7a9dc914d6984,
         type: 2}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}

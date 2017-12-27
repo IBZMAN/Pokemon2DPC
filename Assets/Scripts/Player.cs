@@ -19,11 +19,11 @@ public class Player : Character
     [SerializeField]
     private Sprite westSprite;
 
-    private bool IsPressingShift
+    private bool IsPressingSprint
     {
         get
         {
-            return Input.GetKey(KeyCode.LeftShift);
+            return Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.Joystick1Button4);
         }
     }
 
@@ -39,7 +39,6 @@ public class Player : Character
     void Update ()
     {
         GetInput();     
-        GetAnimations();
 	}
 
     private void FixedUpdate()
@@ -51,31 +50,36 @@ public class Player : Character
     {
         direction = Vector2.zero;
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetAxisRaw("Vertical") > 0)
         {
             //myAnimator.SetFloat("velY", myRigidBody.velocity.y);
-            gameObject.GetComponent<SpriteRenderer>().sprite = northSprite;
+            ChangeSprite(northSprite);
             direction += Vector2.up;
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetAxisRaw("Horizontal") < 0)
         {
             //myAnimator.SetFloat("velX", myRigidBody.velocity.x);
-            gameObject.GetComponent<SpriteRenderer>().sprite = westSprite;
+            ChangeSprite(westSprite);
             direction += Vector2.left;
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetAxisRaw("Vertical") < 0)
         {
             //myAnimator.SetFloat("velY", myRigidBody.velocity.y);
-            gameObject.GetComponent<SpriteRenderer>().sprite = southSprite;
+            ChangeSprite(southSprite);
             direction += Vector2.down;
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetAxisRaw("Horizontal") > 0)
         {
             //myAnimator.SetFloat("velX", myRigidBody.velocity.x);
-            gameObject.GetComponent<SpriteRenderer>().sprite = eastSprite;
+            ChangeSprite(eastSprite);
             direction += Vector2.right;
         }
 
+    }
+
+    private void ChangeSprite(Sprite newSprite)
+    {
+        gameObject.GetComponent<SpriteRenderer>().sprite = newSprite;
     }
 
     private void GetAnimations()
@@ -88,16 +92,14 @@ public class Player : Character
     
     private void Move()
     {
-        if (IsPressingShift)
+        if (IsPressingSprint)
         {
             myRigidBody.velocity = direction.normalized * (speed + 3f);
         }
         else
         {
             myRigidBody.velocity = direction.normalized * speed;
-        }
-
-        //myRigidBody.velocity = direction.normalized * speed;
+        }   
     }
 
 }
