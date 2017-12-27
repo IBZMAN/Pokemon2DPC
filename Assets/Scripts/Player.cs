@@ -2,13 +2,30 @@
 
 public class Player : Character
 {
-
     Animator myAnimator;
-    public Sprite startingSprite;
-    public Sprite northSprite;
-    public Sprite eastSprite;
-    public Sprite southSprite;
-    public Sprite westSprite;
+
+    [SerializeField]
+    private Sprite startingSprite;
+
+    [SerializeField]
+    private Sprite northSprite;
+
+    [SerializeField]
+    private Sprite eastSprite;
+
+    [SerializeField]
+    private Sprite southSprite;
+
+    [SerializeField]
+    private Sprite westSprite;
+
+    private bool IsPressingShift
+    {
+        get
+        {
+            return Input.GetKey(KeyCode.LeftShift);
+        }
+    }
 
     void Start ()
     {
@@ -19,8 +36,7 @@ public class Player : Character
 
     void Update ()
     {
-        GetInput();
-        
+        GetInput();     
 	}
 
     private void FixedUpdate()
@@ -37,7 +53,6 @@ public class Player : Character
             myAnimator.SetFloat("velY", myRigidBody.velocity.y);
             gameObject.GetComponent<SpriteRenderer>().sprite = northSprite;
             direction += Vector2.up;
-
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -60,11 +75,9 @@ public class Player : Character
 
     }
     
-    
-
     private void Move()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (IsPressingShift)
         {
             myRigidBody.velocity = direction.normalized * (speed + 3f);
         }
