@@ -12,6 +12,7 @@ TagManager:
   - healthCentre
   - exitHealthCentre
   - pokeMart
+  - grass
   layers:
   - Default
   - TransparentFX
