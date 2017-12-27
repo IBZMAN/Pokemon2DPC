@@ -27,8 +27,25 @@ public class Player : Character
         }
     }
 
+<<<<<<< HEAD
     public Animation walkLeftAnim;
 
+=======
+=======
+    public Sprite startingSprite;
+    public Sprite northSprite;
+    public Sprite eastSprite;
+    public Sprite southSprite;
+    public Sprite westSprite;
+<<<<<<< HEAD
+   
+
+
+=======
+    public Animation walkLeftAnim;
+>>>>>>> 8b1dd9bec34fcdf2fd4c5b234f653a249b62716f
+>>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02
+>>>>>>> master
     void Start ()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -39,6 +56,18 @@ public class Player : Character
     void Update ()
     {
         GetInput();     
+<<<<<<< HEAD
+=======
+=======
+        GetInput();
+<<<<<<< HEAD
+
+=======
+        GetAnimations();
+        
+>>>>>>> 8b1dd9bec34fcdf2fd4c5b234f653a249b62716f
+>>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02
+>>>>>>> master
 	}
 
     private void FixedUpdate()
@@ -55,6 +84,18 @@ public class Player : Character
             //myAnimator.SetFloat("velY", myRigidBody.velocity.y);
             ChangeSprite(northSprite);
             direction += Vector2.up;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+           
+
+
+>>>>>>> 8b1dd9bec34fcdf2fd4c5b234f653a249b62716f
+>>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02
+>>>>>>> master
         }
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
@@ -76,6 +117,14 @@ public class Player : Character
         }
 
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+    private void GetAnimations()
+    {
+>>>>>>> master
 
     private void ChangeSprite(Sprite newSprite)
     {
@@ -90,6 +139,7 @@ public class Player : Character
         }
     }
     
+>>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02
     private void Move()
     {
         if (IsPressingSprint)
