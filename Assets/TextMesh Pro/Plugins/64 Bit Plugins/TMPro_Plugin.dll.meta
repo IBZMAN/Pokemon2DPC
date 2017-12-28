@@ -3,6 +3,7 @@ guid: 343b74f75ac5f264b88992d380d434e2
 timeCreated: 1450987494
 licenseType: Store
 PluginImporter:
+<<<<<<< HEAD
   externalObjects: {}
   serializedVersion: 2
   iconMap: {}
@@ -36,11 +37,27 @@ PluginImporter:
   - first:
       Editor: Editor
     second:
+=======
+  serializedVersion: 1
+  iconMap: {}
+  executionOrder: {}
+  isPreloaded: 0
+  platformData:
+    Android:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+    Any:
+      enabled: 0
+      settings: {}
+    Editor:
+>>>>>>> 2d264ed186f8b96a9b643ebf1a2b3c82622dcda2
       enabled: 1
       settings:
         CPU: x86_64
         DefaultValueInitialized: true
         OS: Windows
+<<<<<<< HEAD
   - first:
       Facebook: Win
     second:
@@ -80,6 +97,33 @@ PluginImporter:
   - first:
       Windows Store Apps: WindowsStoreApps
     second:
+=======
+    Linux:
+      enabled: 0
+      settings:
+        CPU: x86
+    Linux64:
+      enabled: 0
+      settings:
+        CPU: x86_64
+    OSXIntel:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+    OSXIntel64:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+    Win:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+    Win64:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+    WindowsStoreApps:
+>>>>>>> 2d264ed186f8b96a9b643ebf1a2b3c82622dcda2
       enabled: 0
       settings:
         CPU: AnyCPU
