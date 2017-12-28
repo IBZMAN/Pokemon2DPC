@@ -1,115 +1,44 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-/*public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : Character
 {
-
-    Direction currentDir;
-    Vector2 input;
-    bool isMoving = false;
-    Vector3 startPos;
-    Vector3 endPos;
-    float time;
-
-    public Sprite northSprite;
-    public Sprite eastSprite;
-    public Sprite southSprite;
-    public Sprite westSprite;
-
-    public float walkSpeed = 3f;
-
     [SerializeField]
-    private bool isAllowedToMove;
+    private float speed;
 
-    void Start()
+    public bool IsMoving
     {
-        isAllowedToMove = true;
+        get
+        {
+            return direction.x != 0 || direction.y != 0;
+        }
     }
 
-    void Update()
+    private bool IsPressingSprint
     {
-
-        if (!isMoving && isAllowedToMove)
+        get
         {
-            input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-
-            if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
-            {
-                input.y = 0;
-            }
-            else
-            {
-                input.x = 0;
-            }
-
-            if (input != Vector2.zero)
-            {
-
-                if (input.x < 0)
-                {
-                    currentDir = Direction.West;
-                }
-                if (input.x > 0)
-                {
-                    currentDir = Direction.East;
-                }
-                if (input.y < 0)
-                {
-                    currentDir = Direction.South;
-                }
-                if (input.y > 0)
-                {
-                    currentDir = Direction.North;
-                }
-
-                switch (currentDir)
-                {
-                    case Direction.North:
-                        gameObject.GetComponent<SpriteRenderer>().sprite = northSprite;
-                        break;
-                    case Direction.East:
-                        gameObject.GetComponent<SpriteRenderer>().sprite = eastSprite;
-                        break;
-                    case Direction.South:
-                        gameObject.GetComponent<SpriteRenderer>().sprite = southSprite;
-                        break;
-                    case Direction.West:
-                        gameObject.GetComponent<SpriteRenderer>().sprite = westSprite;
-                        break;
-                }
-
-                StartCoroutine(Move(transform));
-            }
-
+            return Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.Joystick1Button4);
         }
-
     }
 
-    public IEnumerator Move(Transform entity)
+    void Start () {
+        myRigidBody = GetComponent<Rigidbody2D>();
+    }
+
+    private void FixedUpdate()
     {
+        Move();
+    }
 
-        isMoving = true;
-        startPos = entity.position;
-        time = 0;
-
-        endPos = new Vector3(startPos.x + System.Math.Sign(input.x), startPos.y + System.Math.Sign(input.y), startPos.z);
-
-        while (time < 1f)
+    private void Move()
+    {
+        if (IsPressingSprint)
         {
-            time += Time.deltaTime * walkSpeed;
-            entity.position = Vector3.Lerp(startPos, endPos, time);
-            yield return null;
+            myRigidBody.velocity = FindObjectOfType<GameManager>().direction.normalized * (speed + 3f);
         }
-
-        isMoving = false;
-        yield return 0;
+        else
+        {
+            myRigidBody.velocity = FindObjectOfType<GameManager>().direction.normalized * speed;
+        }
     }
 }
-
-enum Direction
-{
-    North,
-    East,
-    South,
-    West
-}*/
