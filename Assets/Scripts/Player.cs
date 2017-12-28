@@ -19,7 +19,7 @@ public class Player : Character
     public Sprite westSprite;
 
     [SerializeField]
-    private Vector2 position;
+    public Vector2 position;
 
     private Door doorController;
 
@@ -110,6 +110,14 @@ public class Player : Character
         if (collision.gameObject.name == "ExitPokeMart")
         {
             transform.position = outsidePokeMartDoor;
+        }       
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("dialogueTrigger"))
+        {
+            collision.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
         }
     }
 }

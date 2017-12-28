@@ -6,11 +6,4 @@ public abstract class Character : MonoBehaviour
 
     protected Rigidbody2D myRigidBody;
 
-    public bool IsMoving
-    {
-        get
-        {
-            return direction.x != 0 || direction.y != 0;
-        }
-    }
 }

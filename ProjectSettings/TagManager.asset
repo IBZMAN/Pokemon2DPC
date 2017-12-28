@@ -16,6 +16,7 @@ TagManager:
   - exitPokeMart
   - EnterHealthCentre
   - EnterPokeMart
+  - dialogueTrigger
   layers:
   - Default
   - TransparentFX

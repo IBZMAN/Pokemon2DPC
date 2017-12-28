@@ -1,12 +1,7 @@
 ﻿using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : Character
 {
-    [SerializeField]
-    protected Vector2 direction;
-
-    protected Rigidbody2D myRigidBody;
-
     [SerializeField]
     private float speed;
 

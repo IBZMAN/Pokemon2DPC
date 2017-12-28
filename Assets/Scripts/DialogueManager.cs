@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialougueManager : MonoBehaviour {
+public class DialogueManager : MonoBehaviour {
 
     private Queue<string> sentences;
 
@@ -13,6 +13,6 @@ public class DialougueManager : MonoBehaviour {
 	
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("Starting conversation with " + name);
+        Debug.Log("Starting conversation with " + dialogue.name);
     }
 }
