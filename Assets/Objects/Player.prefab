@@ -22,11 +22,9 @@ GameObject:
   - component: {fileID: 212581765438832704}
   - component: {fileID: 50472967319309522}
   - component: {fileID: 95906270681268600}
-  - component: {fileID: 114244197358062774}
   - component: {fileID: 114257774450275268}
   - component: {fileID: 60684478121694884}
-  - component: {fileID: 222512686596611102}
-  - component: {fileID: 114150690233036818}
+  - component: {fileID: 114250252665540870}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -106,7 +104,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114150690233036818
+--- !u!114 &114250252665540870
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -114,48 +112,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1077980600018526}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!114 &114244197358062774
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1077980600018526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b44fe51390b1df44bed528654da53ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d911800d8bb9d84f8b6f1ef5b5d6d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  startingSprite: {fileID: 21300034, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
-  northSprite: {fileID: 21300000, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
-  eastSprite: {fileID: 21300096, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
-  southSprite: {fileID: 21300034, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
-  westSprite: {fileID: 21300064, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
+  startingSprite: {fileID: 0}
+  northSprite: {fileID: 0}
+  eastSprite: {fileID: 0}
+  southSprite: {fileID: 0}
+  westSprite: {fileID: 0}
   lastPos: {x: 0, y: 0}
 --- !u!114 &114257774450275268
 MonoBehaviour:
@@ -219,12 +184,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!222 &222512686596611102
-CanvasRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1077980600018526}
 --- !u!224 &224576549660766284
 RectTransform:
   m_ObjectHideFlags: 1

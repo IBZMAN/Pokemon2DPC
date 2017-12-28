@@ -27894,8 +27894,8 @@ GameObject:
   - component: {fileID: 1539735029}
   - component: {fileID: 1539735028}
   - component: {fileID: 1539735027}
-  - component: {fileID: 1539735026}
   - component: {fileID: 1539735025}
+  - component: {fileID: 1539735026}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -27942,8 +27942,7 @@ PolygonCollider2D:
 --- !u!114 &1539735026
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114244197358062774, guid: c021824302ce15f4d897b73da3aa3646,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1539735024}
   m_Enabled: 1
@@ -27951,7 +27950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d911800d8bb9d84f8b6f1ef5b5d6d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 2
   startingSprite: {fileID: 21300034, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
   northSprite: {fileID: 21300000, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
   eastSprite: {fileID: 21300096, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
@@ -27966,7 +27965,7 @@ Animator:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1539735024}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c13b9f7db5e6d094bb40d82999288989, type: 2}
   m_CullingMode: 0

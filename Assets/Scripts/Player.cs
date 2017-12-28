@@ -22,6 +22,8 @@ public class Player : Character
 
     private Door doorController;
 
+    Animator myAnim;
+
     private bool IsPressingSprint
     {
         get
@@ -32,13 +34,15 @@ public class Player : Character
 
     void Start ()
     {
+        myAnim = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
-        gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;     
+        gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;
     }
 
     void Update ()
     {
-        GetInput();     
+        GetInput();
+        PlayerAnimations();
 	}
 
     void LateUpdate()
@@ -123,6 +127,26 @@ public class Player : Character
         if (collision.gameObject.name == "ExitPokeMart")
         {
             transform.position = outsidePokeMartDoor;
+        }
+    }
+
+    private void PlayerAnimations()
+    {
+        if (Input.GetKey(KeyCode.D))
+        {
+            myAnim.SetInteger("State", 2);
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            myAnim.SetInteger("State", 4);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            myAnim.SetInteger("State", 3);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            myAnim.SetInteger("State", 1);
         }
     }
 }
