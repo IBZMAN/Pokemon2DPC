@@ -100,10 +100,10 @@ public class Player : Character
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Vector2 outsideHealthCentreDoor = new Vector2(6, -1);
-        Vector2 outsidePokeMartDoor = new Vector2(10.5f, -1);
+        Vector2 outsideHealthCentreDoor = new Vector2(-2.51f, -1.7f);
+        Vector2 outsidePokeMartDoor = new Vector2(2.25f, -1.67f);
         Vector2 InsideHealthCentre = new Vector2(-143.32f, -2.6f);
-        Vector2 InsidePokeMart = new Vector2(-143.32f, -2.6f);
+        Vector2 InsidePokeMart = new Vector2(6.71f, 129.66f);
 
         if (collision.gameObject.name == "EnterHealthCentre")
         {
