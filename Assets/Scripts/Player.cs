@@ -30,13 +30,13 @@ public class Player : Character
     void Start ()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
-<<<<<<< HEAD
-        myAnimator = GetComponent<Animator>();
+
+        
         gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;
-=======
+
        
         gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;      
->>>>>>> 545a5688467ea962947569dd0dee4e0a77ecaa56
+
     }
 
     void Update ()
@@ -85,13 +85,7 @@ public class Player : Character
         gameObject.GetComponent<SpriteRenderer>().sprite = newSprite;
     }
 
-    private void GetAnimations()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            //animation.Play("WalkDown");
-        }
-    }
+   
     
     private void Move()
     {
