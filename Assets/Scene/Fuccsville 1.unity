@@ -12760,6 +12760,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1793963136}
+    - target: {fileID: 1386705685833998, guid: 750775cf41106ee45b3301fcbe6a75d2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 750775cf41106ee45b3301fcbe6a75d2, type: 2}
   m_IsPrefabParent: 0
@@ -34886,7 +34890,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1930549507}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.938659, y: -3.8722277, z: -10}
+  m_LocalPosition: {x: -6.61, y: -11.17, z: -10}
   m_LocalScale: {x: 1.2065625, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -34940,6 +34944,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10

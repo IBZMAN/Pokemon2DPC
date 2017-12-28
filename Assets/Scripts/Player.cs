@@ -43,7 +43,7 @@ public class Player : Character
     void Update ()
     {
         //GetInput();
-        PlayerAnimations();
+        HandleAnimations();
 	}
 
     void LateUpdate()
@@ -139,7 +139,7 @@ public class Player : Character
         }
     }
 
-    private void PlayerAnimations()
+    private void HandleAnimations()
     {
         if (Input.GetKeyDown(KeyCode.W))
         {
