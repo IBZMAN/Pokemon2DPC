@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class BasePokemon : MonoBehaviour
 {
-    public string name;
+    public string PName;
     public Sprite image;
     public int HP;
     private int maxHP;
@@ -32,7 +32,7 @@ public class BasePokemon : MonoBehaviour
 
     public void AddMember(BasePokemon bp)
     {
-        this.name = bp.name;
+        this.PName = bp.PName;
         this.image = bp.image;
         this.type = bp.type;
         this.rarity = bp.rarity;
