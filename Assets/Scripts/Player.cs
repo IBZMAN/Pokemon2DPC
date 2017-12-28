@@ -4,99 +4,86 @@ using UnityEngine.SceneManagement;
 public class Player : Character
 { 
     [SerializeField]
-    private Sprite startingSprite;
+    public Sprite startingSprite;
 
     [SerializeField]
-    private Sprite northSprite;
+    public Sprite northSprite;
 
     [SerializeField]
-    private Sprite eastSprite;
+    public Sprite eastSprite;
 
     [SerializeField]
-    private Sprite southSprite;
+    public Sprite southSprite;
 
     [SerializeField]
-    private Sprite westSprite;
+    public Sprite westSprite;
 
-    public Vector2 lastPos;
+    [SerializeField]
+    private Vector2 position;
 
     private Door doorController;
 
-    private bool IsPressingSprint
-    {
-        get
-        {
-            return Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.Joystick1Button4);
-        }
-    }
-
     void Start ()
     {
-        myRigidBody = GetComponent<Rigidbody2D>();
         gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;     
     }
 
-    void Update ()
-    {
-        GetInput();     
-	}
-
     void LateUpdate()
     {
-        lastPos = transform.position;
+        position = transform.position;
     }
 
     private void FixedUpdate()
     {
-        Move();
+
     }
 
-    private void GetInput()
-    {
-        direction = Vector2.zero;
+    //private void GetInput()
+    //{
+    //    direction = Vector2.zero;
 
-        if (Input.GetAxisRaw("Vertical") > 0)
-        {
-            //myAnimator.SetFloat("velY", myRigidBody.velocity.y);
-            ChangeSprite(northSprite);
-            direction += Vector2.up;
-        }
-        if (Input.GetAxisRaw("Horizontal") < 0)
-        {
-            //myAnimator.SetFloat("velX", myRigidBody.velocity.x);
-            ChangeSprite(westSprite);
-            direction += Vector2.left;
-        }
-        if (Input.GetAxisRaw("Vertical") < 0)
-        {
-            //myAnimator.SetFloat("velY", myRigidBody.velocity.y);
-            ChangeSprite(southSprite);
-            direction += Vector2.down;
-        }
-        if (Input.GetAxisRaw("Horizontal") > 0)
-        {
-            //myAnimator.SetFloat("velX", myRigidBody.velocity.x);
-            ChangeSprite(eastSprite);
-            direction += Vector2.right;
-        }
-    }
+    //    if (Input.GetAxisRaw("Vertical") > 0)
+    //    {
+    //        //myAnimator.SetFloat("velY", myRigidBody.velocity.y);
+    //        ChangeSprite(northSprite);
+    //        direction += Vector2.up;
+    //    }
+    //    if (Input.GetAxisRaw("Horizontal") < 0)
+    //    {
+    //        //myAnimator.SetFloat("velX", myRigidBody.velocity.x);
+    //        ChangeSprite(westSprite);
+    //        direction += Vector2.left;
+    //    }
+    //    if (Input.GetAxisRaw("Vertical") < 0)
+    //    {
+    //        //myAnimator.SetFloat("velY", myRigidBody.velocity.y);
+    //        ChangeSprite(southSprite);
+    //        direction += Vector2.down;
+    //    }
+    //    if (Input.GetAxisRaw("Horizontal") > 0)
+    //    {
+    //        //myAnimator.SetFloat("velX", myRigidBody.velocity.x);
+    //        ChangeSprite(eastSprite);
+    //        direction += Vector2.right;
+    //    }
+    //}
 
-    private void ChangeSprite(Sprite newSprite)
-    {
-        gameObject.GetComponent<SpriteRenderer>().sprite = newSprite;
-    }
+    //private void ChangeSprite(Sprite newSprite)
+    //{
+    //    gameObject.GetComponent<SpriteRenderer>().sprite = newSprite;
+    //}
 
-    private void Move()
-    {
-        if (IsPressingSprint)
-        {
-            myRigidBody.velocity = direction.normalized * (speed + 3f);
-        }
-        else
-        {
-            myRigidBody.velocity = direction.normalized * speed;
-        }   
-    }
+    //private void Move()
+    //{
+    //    if (IsPressingSprint)
+    //    {
+    //        myRigidBody.velocity = FindObjectOfType<GameManager>().direction.normalized * (speed + 3f);
+    //    }
+    //    else
+    //    {
+    //        myRigidBody.velocity = FindObjectOfType<GameManager>().direction.normalized * speed;
+    //    }   
+    //}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
