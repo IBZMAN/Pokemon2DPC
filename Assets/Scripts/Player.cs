@@ -23,7 +23,6 @@ public class Player : Character
 
     private Door doorController;
 
-<<<<<<< HEAD
     Animator myAnim;
 
     private bool IsPressingSprint
@@ -43,17 +42,10 @@ public class Player : Character
 
     void Update ()
     {
-        GetInput();
+        //GetInput();
         PlayerAnimations();
 	}
 
-=======
-    void Start ()
-    {
-        gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;     
-    }
-
->>>>>>> e5cf7824906cd3726653750386277cb7e38ee099
     void LateUpdate()
     {
         position = transform.position;
