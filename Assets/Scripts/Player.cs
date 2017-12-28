@@ -33,38 +33,18 @@ public class Player : Character
     void Start ()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
-        gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;
-        
-
-        /*if (GameManager.doorID != 0)
-        {
-            foreach (var door in GetComponents<Door>())
-            {
-                if (door.doorID == GameManager.doorID)
-                {
-                    Vector2 offsetPosition = new Vector2(door.transform.position.x, door.transform.position.y);
-                    offsetPosition.y += 0.9f;
-                    transform.position = offsetPosition;
-                }
-            }
-        }*/
-
-        //if (lastPos != null)
-        //{
-        //    Vector2 offsetPosition = new Vector2(GameManager.playerPosition.x, GameManager.playerPosition.y -= 0.08f);
-        //    transform.position = offsetPosition;
-        //}
-    }
-
-    void Awake()
-    {
-        //DontDestroyOnLoad(transform.gameObject);
+        gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;     
     }
 
     void Update ()
     {
         GetInput();     
 	}
+
+    void LateUpdate()
+    {
+        lastPos = transform.position;
+    }
 
     private void FixedUpdate()
     {
@@ -117,29 +97,6 @@ public class Player : Character
             myRigidBody.velocity = direction.normalized * speed;
         }   
     }
-
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.name == "HealthCentreTrigger")
-        {
-            //playerPosition = transform.position;
-            // lastPos.y += 2;
-            doorController = collision.GetComponent<Door>();
-
-            GameManager.doorID = doorController.doorID;
-
-            SceneManager.LoadScene("InsideHealthCentre");
-        }
-
-        if (collision.gameObject.name == "ExitHealthCentre")
-        {
-            SceneManager.LoadScene("Fuccsville 1");
-
-            //transform.position = GameManager.playerPosition;
-
-            //transform.position = lastPos;
-        }
-    }*/
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
