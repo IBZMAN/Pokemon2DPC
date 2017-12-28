@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
 
 public class Player : Character
-{
-
-
+{ 
     [SerializeField]
     private Sprite startingSprite;
 
@@ -30,6 +28,7 @@ public class Player : Character
     void Start ()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
+<<<<<<< HEAD
 
         
         gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;
@@ -37,12 +36,14 @@ public class Player : Character
        
         gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;      
 
+=======
+        gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;       
+>>>>>>> fda6cb26e172a2cec0903382352f9891f02b81cd
     }
 
     void Update ()
     {
         GetInput();     
-        GetInput();
 	}
 
     private void FixedUpdate()
