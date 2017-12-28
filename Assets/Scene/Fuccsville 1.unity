@@ -39,7 +39,6 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
---- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
@@ -91,7 +90,6 @@ LightmapSettings:
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
---- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
@@ -113,7 +111,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &508808
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -176,12 +173,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cce5b1872c3d82b499a624b062fdd05a, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &508809 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4618994325023766, guid: cce5b1872c3d82b499a624b062fdd05a,
     type: 2}
   m_PrefabInternal: {fileID: 508808}
---- !u!1001 &3406997
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -244,12 +239,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd57a38377177d04f9aff0fbf9164b74, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &3406998 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4809033872687016, guid: bd57a38377177d04f9aff0fbf9164b74,
     type: 2}
   m_PrefabInternal: {fileID: 3406997}
---- !u!1 &3639648
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -265,7 +258,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3639649
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -278,7 +270,6 @@ Transform:
   m_Father: {fileID: 672511249}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3639650
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -28466,11 +28457,7 @@ GameObject:
   - component: {fileID: 1539735028}
   - component: {fileID: 1539735027}
   - component: {fileID: 1539735025}
-<<<<<<< HEAD
-  - component: {fileID: 1539735026}
-=======
-  - component: {fileID: 1539735031}
->>>>>>> e5cf7824906cd3726653750386277cb7e38ee099
+
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -28525,10 +28512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d911800d8bb9d84f8b6f1ef5b5d6d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   speed: 2
-=======
->>>>>>> e5cf7824906cd3726653750386277cb7e38ee099
+
   startingSprite: {fileID: 21300034, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
   northSprite: {fileID: 21300000, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
   eastSprite: {fileID: 21300096, guid: b9e45c8a0f952634f9bbf335fe240dfa, type: 3}
