@@ -11916,7 +11916,8 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 95437893265585366, guid: 083f568a182eee84e9ad979b14176666, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 083f568a182eee84e9ad979b14176666, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &595749503
@@ -32456,6 +32457,28 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1796012085 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1213238420456410, guid: 083f568a182eee84e9ad979b14176666,
+    type: 2}
+  m_PrefabInternal: {fileID: 594417296}
+--- !u!95 &1796012086
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796012085}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c13b9f7db5e6d094bb40d82999288989, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1796246898
 Prefab:
   m_ObjectHideFlags: 0
@@ -34944,7 +34967,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
