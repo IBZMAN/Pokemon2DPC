@@ -7723,11 +7723,11 @@ Transform:
   - {fileID: 2022803243}
   - {fileID: 1823601651}
   m_Father: {fileID: 0}
-<<<<<<< HEAD:Assets/Scene/Starting Town.unity
+
   m_RootOrder: 0
-=======
+
   m_RootOrder: 2
->>>>>>> f029b5c5fd01f357d2d89472110ce765c48a3a02:Assets/Scene/StartingTown.unity
+
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1337890875
 GameObject:
