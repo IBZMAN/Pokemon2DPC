@@ -17,22 +17,4 @@ public abstract class Character : MonoBehaviour
             return direction.x != 0 || direction.y != 0;
         }
     }
-
-	// Use this for initialization
-	void Start ()
-    {
-        
-	}
-	
-	// Update is called once per frame
-	protected virtual void Update ()
-    {
-        
-	}
-
-    void FixedUpdate()
-    {
-        
-    }
-
 }

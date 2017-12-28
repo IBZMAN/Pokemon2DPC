@@ -35,7 +35,7 @@ public class Player : Character
         myRigidBody = GetComponent<Rigidbody2D>();
         gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;
 
-        if (GameManager.doorID != 0)
+        /*if (GameManager.doorID != 0)
         {
             foreach (var door in GetComponents<Door>())
             {
@@ -46,7 +46,7 @@ public class Player : Character
                     transform.position = offsetPosition;
                 }
             }
-        }
+        }*/
 
         //if (lastPos != null)
         //{
@@ -117,7 +117,7 @@ public class Player : Character
         }   
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "HealthCentreTrigger")
         {
@@ -137,6 +137,38 @@ public class Player : Character
             //transform.position = GameManager.playerPosition;
 
             //transform.position = lastPos;
+        }
+    }*/
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Vector2 outsideHealthCentreDoor = new Vector2(6, -1);
+        Vector2 outsidePokeMartDoor = new Vector2(10.5f, -1);
+        Vector2 InsideHealthCentre = new Vector2(-143.32f, -2.6f);
+        Vector2 InsidePokeMart = new Vector2(-143.32f, -2.6f);
+
+        if (collision.gameObject.tag == "EnterHealthCentre")
+        {
+            Player Player = collision.gameObject.GetComponent<Player>();
+            Player.transform.position = InsideHealthCentre;
+        }
+
+        if (collision.gameObject.tag == "EnterPokeMart")
+        {
+            Player Player = collision.gameObject.GetComponent<Player>();
+            Player.transform.position = InsidePokeMart;
+        }
+
+        if (collision.gameObject.tag == "exitHealthCentre")
+        {
+             Player Player = collision.gameObject.GetComponent<Player>();
+             Player.transform.position = outsideHealthCentreDoor;
+        }
+
+        if (collision.gameObject.tag == "exitPokeMart")
+        {
+            Player Player = collision.gameObject.GetComponent<Player>();
+            Player.transform.position = outsidePokeMartDoor;
         }
     }
 }

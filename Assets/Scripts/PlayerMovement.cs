@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMovement : MonoBehaviour
+/*public class PlayerMovement : MonoBehaviour
 {
 
     Direction currentDir;
@@ -112,4 +112,4 @@ enum Direction
     East,
     South,
     West
-}
+}*/
