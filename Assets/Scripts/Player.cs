@@ -141,21 +141,37 @@ public class Player : Character
 
     private void PlayerAnimations()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            myAnim.SetInteger("State", 2);
+            myAnim.SetInteger("State", 1); 
         }
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKeyUp(KeyCode.W))
         {
-            myAnim.SetInteger("State", 4);
+            myAnim.SetInteger("State", -1);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             myAnim.SetInteger("State", 3);
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            myAnim.SetInteger("State", 1);
+            myAnim.SetInteger("State", -3);
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            myAnim.SetInteger("State", 4);
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            myAnim.SetInteger("State", -4);
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            myAnim.SetInteger("State", 2);
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            myAnim.SetInteger("State", -2);
         }
     }
 }
