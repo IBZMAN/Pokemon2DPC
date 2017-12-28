@@ -34,6 +34,7 @@ public class Player : Character
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;
+        
 
         /*if (GameManager.doorID != 0)
         {
@@ -147,28 +148,24 @@ public class Player : Character
         Vector2 InsideHealthCentre = new Vector2(-143.32f, -2.6f);
         Vector2 InsidePokeMart = new Vector2(-143.32f, -2.6f);
 
-        if (collision.gameObject.tag == "EnterHealthCentre")
+        if (collision.gameObject.name == "EnterHealthCentre")
         {
-            Player Player = collision.gameObject.GetComponent<Player>();
-            Player.transform.position = InsideHealthCentre;
+            transform.position = InsideHealthCentre;
         }
 
-        if (collision.gameObject.tag == "EnterPokeMart")
+        if (collision.gameObject.name == "EnterPokeMart")
         {
-            Player Player = collision.gameObject.GetComponent<Player>();
-            Player.transform.position = InsidePokeMart;
+            transform.position = InsidePokeMart;
         }
 
-        if (collision.gameObject.tag == "exitHealthCentre")
+        if (collision.gameObject.name == "ExitHealthCentre")
         {
-             Player Player = collision.gameObject.GetComponent<Player>();
-             Player.transform.position = outsideHealthCentreDoor;
+             transform.position = outsideHealthCentreDoor;
         }
 
-        if (collision.gameObject.tag == "exitPokeMart")
+        if (collision.gameObject.name == "ExitPokeMart")
         {
-            Player Player = collision.gameObject.GetComponent<Player>();
-            Player.transform.position = outsidePokeMartDoor;
+            transform.position = outsidePokeMartDoor;
         }
     }
 }
