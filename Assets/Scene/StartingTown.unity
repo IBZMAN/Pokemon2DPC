@@ -283,7 +283,7 @@ MonoBehaviour:
   yMax: 0
   target: {fileID: 60270829}
   offset: {x: 0, y: 0, z: 0}
->>>>>>> 3498a16054bf3df24d3b50c4e3ae9ee78563d53c
+
 --- !u!1001 &27828043
 Prefab:
   m_ObjectHideFlags: 0
@@ -4184,7 +4184,7 @@ Prefab:
     - {fileID: 114257774450275268, guid: c021824302ce15f4d897b73da3aa3646, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: c021824302ce15f4d897b73da3aa3646, type: 2}
   m_IsPrefabParent: 0
->>>>>>> 3498a16054bf3df24d3b50c4e3ae9ee78563d53c
+
 --- !u!1001 &617231101
 Prefab:
   m_ObjectHideFlags: 0
