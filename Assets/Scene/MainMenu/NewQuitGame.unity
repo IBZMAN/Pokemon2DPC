@@ -619,4 +619,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4a37cd53c90cd43bec9ce45edd2351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextLevelToLoad: Starting Town
+  NextLevelToLoad: StartingTown
