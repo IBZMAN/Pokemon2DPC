@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerMovement : Character
+public class PlayerMovement : Player
 {
     [SerializeField]
     private float speed;
@@ -34,11 +34,11 @@ public class PlayerMovement : Character
     {
         if (IsPressingSprint)
         {
-            myRigidBody.velocity = FindObjectOfType<GameManager>().direction.normalized * (speed + 3f);
+            myRigidBody.velocity = direction.normalized * (speed + 3f);
         }
         else
         {
-            myRigidBody.velocity = FindObjectOfType<GameManager>().direction.normalized * speed;
+            myRigidBody.velocity = direction.normalized * speed;
         }
     }
 }

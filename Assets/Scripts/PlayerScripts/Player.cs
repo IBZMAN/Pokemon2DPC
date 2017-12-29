@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player : Character
-{ 
+{
     //[SerializeField]
     //public Sprite startingSprite;
 
@@ -22,6 +22,9 @@ public class Player : Character
     [SerializeField]
     public Vector2 position;
 
+    [SerializeField]
+    private float runSpeed;
+
     Animator myAnimator;
 
     // Add mouse wheel to zoom out?
@@ -34,6 +37,14 @@ public class Player : Character
         }
     }
 
+    public bool IsMoving
+    {
+        get
+        {
+            return direction.x != 0 || direction.y != 0;
+        }
+    }
+
     void Start ()
     {
         myAnimator = GetComponent<Animator>();
@@ -43,8 +54,23 @@ public class Player : Character
 
     void Update ()
     {
+<<<<<<< HEAD
         HandleIdleAnimations();
         HandleWalkingAnimations();
+=======
+        GetInput();
+
+        if (IsMoving) 
+        {
+            AnimateMovement(direction);
+        }
+        else
+        {
+            myAnimator.SetLayerWeight(2, 0);
+            myAnimator.SetLayerWeight(1, 0);
+        }
+
+>>>>>>> 13a1c725ab7ae7552914dede1503dc89f46aa092
     }
 
     void LateUpdate()
@@ -99,36 +125,66 @@ public class Player : Character
         }
     }
 
-    private void HandleIdleAnimations()
+    public void AnimateMovement(Vector2 direction)
     {
+<<<<<<< HEAD
         if (Input.GetAxisRaw("Vertical") > 0)
+=======
+        myAnimator.SetLayerWeight(1, 1);
+
+        if (IsPressingSprint)
+>>>>>>> 13a1c725ab7ae7552914dede1503dc89f46aa092
         {
-            myAnimator.SetInteger("State", 1);         
+            myAnimator.SetLayerWeight(2, 1);
+        }
+        else
+        {
+            myAnimator.SetLayerWeight(2, 0);
         }
 
+<<<<<<< HEAD
 
         if (Input.GetAxisRaw("Horizontal") < 0)
+=======
+        myAnimator.SetFloat("x", direction.x);
+        myAnimator.SetFloat("y", direction.y);
+
+    }
+
+    void GetInput()
+    {
+        direction = Vector2.zero;
+
+        if (Input.GetAxisRaw("Vertical") > 0)
+>>>>>>> 13a1c725ab7ae7552914dede1503dc89f46aa092
         {
-            myAnimator.SetInteger("State", -2);
+            direction += Vector2.up;
         }
 
         if (Input.GetAxisRaw("Vertical") < 0)
         {
-            myAnimator.SetInteger("State", -1);
+            direction += Vector2.down;
         }
 
         if (Input.GetAxisRaw("Horizontal") > 0)
+<<<<<<< HEAD
          {
            myAnimator.SetInteger("State", 2);
-        }
-    }
-
-    private void HandleWalkingAnimations()
-    {
-        if (Input.GetKeyDown(KeyCode.W))
+=======
         {
+            direction += Vector2.right;
+>>>>>>> 13a1c725ab7ae7552914dede1503dc89f46aa092
+        }
+
+        if (Input.GetAxisRaw("Horizontal") < 0)
+        {
+<<<<<<< HEAD
             myAnimator.SetLayerWeight(1, 1);
         }       
 
+=======
+            direction += Vector2.left;
+        }
+>>>>>>> 13a1c725ab7ae7552914dede1503dc89f46aa092
     }
 }
