@@ -79,22 +79,22 @@ public class GameManager : MonoBehaviour {
 
         if (Input.GetAxisRaw("Vertical") > 0)
         {
-            ChangeSprite(thePlayer.gameObject, thePlayer.northSprite);
+            //ChangeSprite(thePlayer.gameObject, thePlayer.northSprite);
             direction += Vector2.up;
         }
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
-            ChangeSprite(thePlayer.gameObject, thePlayer.westSprite);
+            //ChangeSprite(thePlayer.gameObject, thePlayer.westSprite);
             direction += Vector2.left;
         }
         if (Input.GetAxisRaw("Vertical") < 0)
         {
-            ChangeSprite(thePlayer.gameObject, thePlayer.southSprite);
+            //ChangeSprite(thePlayer.gameObject, thePlayer.southSprite);
             direction += Vector2.down;
         }
         if (Input.GetAxisRaw("Horizontal") > 0)
         {
-            ChangeSprite(thePlayer.gameObject, thePlayer.eastSprite);
+            //ChangeSprite(thePlayer.gameObject, thePlayer.eastSprite);
             direction += Vector2.right;
         }
     }
