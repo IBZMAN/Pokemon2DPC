@@ -144,14 +144,14 @@ public class Player : Character
         if (Input.GetKeyDown(KeyCode.W))
         {
             myAnim.SetInteger("State", 1);
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                myAnim.SetInteger("State", 2);
-            }
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                myAnim.SetInteger("State", -2);
-            }
+            //if (Input.GetKeyDown(KeyCode.D))
+            //{
+            //    myAnim.SetInteger("State", 2);
+            //}
+            //if (Input.GetKeyDown(KeyCode.A))
+            //{
+            //    myAnim.SetInteger("State", -2);
+            //}
             
         }
         // if (Input.GetKeyUp(KeyCode.W))
