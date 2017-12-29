@@ -2,7 +2,6 @@
 
 public class CameraFollow : MonoBehaviour
 {
-
     [SerializeField]
     private bool restrictCamera = false;
 
