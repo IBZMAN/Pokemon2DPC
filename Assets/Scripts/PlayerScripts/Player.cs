@@ -43,8 +43,10 @@ public class Player : Character
 
     void Update ()
     {
-        HandleAnimations();
-	}
+        HandleIdleAnimations();
+        HandleWalkingAnimations();
+
+    }
 
     void LateUpdate()
     {
@@ -98,9 +100,9 @@ public class Player : Character
         }
     }
 
-    private void HandleAnimations()
+    private void HandleIdleAnimations()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyUp(KeyCode.W))
         {
             myAnimator.SetInteger("State", 1);         
         }
@@ -110,7 +112,7 @@ public class Player : Character
         //  myAnim.SetInteger("State", -1);
         //}
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyUp(KeyCode.A))
         {
             myAnimator.SetInteger("State", -2);
         }
@@ -120,7 +122,7 @@ public class Player : Character
         //myAnim.SetInteger("State", 2);
         //}da
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyUp(KeyCode.S))
         {
             myAnimator.SetInteger("State", -1);
         }
@@ -130,7 +132,7 @@ public class Player : Character
             //myAnim.SetInteger("State", -3);
         //}
         
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyUp(KeyCode.D))
          {
            myAnimator.SetInteger("State", 2);
         }
@@ -139,5 +141,15 @@ public class Player : Character
         //{
             //myAnim.SetInteger("State", -2);
         //}
+    }
+
+    private void HandleWalkingAnimations()
+    {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            myAnimator.SetLayerWeight(1, 1);
+        }
+        
+
     }
 }
