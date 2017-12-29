@@ -45,7 +45,6 @@ public class Player : Character
     {
         HandleIdleAnimations();
         HandleWalkingAnimations();
-
     }
 
     void LateUpdate()
@@ -102,48 +101,23 @@ public class Player : Character
 
     private void HandleIdleAnimations()
     {
-<<<<<<< HEAD
-        if (Input.GetKeyUp(KeyCode.W))
-=======
         if (Input.GetAxisRaw("Vertical") > 0)
->>>>>>> 1be261149554ba9fdd46550c554e3e23e872b8e4
         {
             myAnimator.SetInteger("State", 1);         
         }
 
-<<<<<<< HEAD
-        // if (Input.GetKeyUp(KeyCode.W))
-        //{
-        //  myAnim.SetInteger("State", -1);
-        //}
 
-        if (Input.GetKeyUp(KeyCode.A))
-=======
         if (Input.GetAxisRaw("Horizontal") < 0)
->>>>>>> 1be261149554ba9fdd46550c554e3e23e872b8e4
         {
             myAnimator.SetInteger("State", -2);
         }
 
-<<<<<<< HEAD
-        // if (Input.GetKeyUp(KeyCode.A))
-        // {
-        //myAnim.SetInteger("State", 2);
-        //}da
-
-        if (Input.GetKeyUp(KeyCode.S))
-=======
         if (Input.GetAxisRaw("Vertical") < 0)
->>>>>>> 1be261149554ba9fdd46550c554e3e23e872b8e4
         {
             myAnimator.SetInteger("State", -1);
         }
-        
-<<<<<<< HEAD
-        if (Input.GetKeyUp(KeyCode.D))
-=======
+
         if (Input.GetAxisRaw("Horizontal") > 0)
->>>>>>> 1be261149554ba9fdd46550c554e3e23e872b8e4
          {
            myAnimator.SetInteger("State", 2);
         }
@@ -154,8 +128,7 @@ public class Player : Character
         if (Input.GetKeyDown(KeyCode.W))
         {
             myAnimator.SetLayerWeight(1, 1);
-        }
-        
+        }       
 
     }
 }
