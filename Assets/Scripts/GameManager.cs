@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
@@ -12,13 +13,42 @@ public class GameManager : MonoBehaviour {
 
     public static int doorID;
 
-	// Use this for initialization
-	void Start () {
+    public List<SpawnPoint> spawnPoints;
+
+    public readonly Vector2 outsideHealthCentreDoor = new Vector2(-2.51f, -1.7f);
+    public readonly Vector2 outsidePokeMartDoor = new Vector2(2.25f, -1.67f);
+    public readonly Vector2 insideHealthCentre = new Vector2(-143.32f, -2.6f);
+    public readonly Vector2 insidePokeMart = new Vector2(6.71f, 129.66f);
+
+    void Start () {
         thePlayer = FindObjectOfType<Player>();
+
+        FillSpawnPoints();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void FillSpawnPoints()
+    {
+        Debug.Log(GameObject.FindGameObjectsWithTag("spawnPoint").Length);
+        GameObject[] temp = GameObject.FindGameObjectsWithTag("spawnPoint");
+        Debug.Log(temp.Length);
+
+        for (int i = 0; i < temp.Length; i++)
+        {
+            spawnPoints.Add(new SpawnPoint());
+            spawnPoints[i].spawnName = temp[i].name;
+            spawnPoints[i].position = GetOffsetSpawnPos(temp[i]);
+        }
+    }
+
+    // Experimental - replace need for hard coded building coordinates
+    private Vector2 GetOffsetSpawnPos(GameObject target)
+    {
+        Vector2 offsetPos = new Vector2(target.transform.position.x, target.transform.position.y);
+        offsetPos.y -= 1f;
+        return offsetPos;
+    }
+
+    void Update () {
         GetDirection();
 	}
 
