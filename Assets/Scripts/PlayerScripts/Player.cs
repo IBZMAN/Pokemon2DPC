@@ -24,6 +24,8 @@ public class Player : Character
 
     Animator myAnimator;
 
+    // Add mouse wheel to zoom out?
+
     private bool IsPressingSprint
     {
         get
@@ -63,25 +65,28 @@ public class Player : Character
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.name == "EnterHealthCentre")
+        if (collision.gameObject.name == "OutsideHealthCentre")
         {
-            int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "ExitHealthCentre");
+            int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "InsideHealthCentre");
             transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
         }
 
-        if (collision.gameObject.name == "EnterPokeMart")
+        if (collision.gameObject.name == "OutsidePokeMart")
         {
-            transform.position = FindObjectOfType<GameManager>().insidePokeMart;
+            int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "InsidePokeMart");
+            transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
         }
 
-        if (collision.gameObject.name == "ExitHealthCentre")
+        if (collision.gameObject.name == "InsideHealthCentre")
         {
-            transform.position = FindObjectOfType<GameManager>().outsideHealthCentreDoor;
+            int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "OutsideHealthCentre");
+            transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
         }
 
-        if (collision.gameObject.name == "ExitPokeMart")
+        if (collision.gameObject.name == "InsidePokeMart")
         {
-            transform.position = FindObjectOfType<GameManager>().outsidePokeMartDoor;
+            int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "OutsidePokeMart");
+            transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
         }       
     }
 

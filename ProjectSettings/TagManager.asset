@@ -17,6 +17,7 @@ TagManager:
   - EnterHealthCentre
   - EnterPokeMart
   - dialogueTrigger
+  - spawnPoint
   layers:
   - Default
   - TransparentFX

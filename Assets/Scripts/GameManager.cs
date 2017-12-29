@@ -15,10 +15,10 @@ public class GameManager : MonoBehaviour {
 
     public List<SpawnPoint> spawnPoints;
 
-    public readonly Vector2 outsideHealthCentreDoor = new Vector2(-2.51f, -1.7f);
-    public readonly Vector2 outsidePokeMartDoor = new Vector2(2.25f, -1.67f);
-    public readonly Vector2 insideHealthCentre = new Vector2(-143.32f, -2.6f);
-    public readonly Vector2 insidePokeMart = new Vector2(6.71f, 129.66f);
+    //public readonly Vector2 outsideHealthCentreDoor = new Vector2(-2.51f, -1.7f);
+    //public readonly Vector2 outsidePokeMartDoor = new Vector2(2.25f, -1.67f);
+    //public readonly Vector2 insideHealthCentre = new Vector2(-143.32f, -2.6f);
+    //public readonly Vector2 insidePokeMart = new Vector2(6.71f, 129.66f);
 
     void Start () {
         thePlayer = FindObjectOfType<Player>();
@@ -28,9 +28,7 @@ public class GameManager : MonoBehaviour {
 
     private void FillSpawnPoints()
     {
-        Debug.Log(GameObject.FindGameObjectsWithTag("spawnPoint").Length);
         GameObject[] temp = GameObject.FindGameObjectsWithTag("spawnPoint");
-        Debug.Log(temp.Length);
 
         for (int i = 0; i < temp.Length; i++)
         {
@@ -38,14 +36,27 @@ public class GameManager : MonoBehaviour {
             spawnPoints[i].spawnName = temp[i].name;
             spawnPoints[i].position = GetOffsetSpawnPos(temp[i]);
         }
+
+        Debug.Log("Number of spawn points: " + spawnPoints.Count);
     }
 
     // Experimental - replace need for hard coded building coordinates
     private Vector2 GetOffsetSpawnPos(GameObject target)
     {
-        Vector2 offsetPos = new Vector2(target.transform.position.x, target.transform.position.y);
-        offsetPos.y -= 1f;
-        return offsetPos;
+        if (target.name.Contains("Outside"))
+        {
+            Vector2 offsetPos = new Vector2(target.transform.position.x, target.transform.position.y);
+            offsetPos.y -= 0.9f;
+            return offsetPos;
+        }
+        else if(target.name.Contains("Inside"))
+        {
+            Vector2 offsetPos = new Vector2(target.transform.position.x, target.transform.position.y);
+            offsetPos.y += 0.9f;
+            return offsetPos;
+        }
+
+        return new Vector2();
     }
 
     void Update () {
