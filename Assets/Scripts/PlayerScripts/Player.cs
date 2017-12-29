@@ -4,20 +4,20 @@ using UnityEngine.SceneManagement;
 
 public class Player : Character
 { 
-    [SerializeField]
-    public Sprite startingSprite;
+    //[SerializeField]
+    //public Sprite startingSprite;
 
-    [SerializeField]
-    public Sprite northSprite;
+    //[SerializeField]
+    //public Sprite northSprite;
 
-    [SerializeField]
-    public Sprite eastSprite;
+    //[SerializeField]
+    //public Sprite eastSprite;
 
-    [SerializeField]
-    public Sprite southSprite;
+    //[SerializeField]
+    //public Sprite southSprite;
 
-    [SerializeField]
-    public Sprite westSprite;
+    //[SerializeField]
+    //public Sprite westSprite;
 
     [SerializeField]
     public Vector2 position;
@@ -38,7 +38,7 @@ public class Player : Character
     {
         myAnimator = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
-        gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;
+        //gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;
     }
 
     void Update ()
@@ -102,45 +102,51 @@ public class Player : Character
 
     private void HandleIdleAnimations()
     {
+<<<<<<< HEAD
         if (Input.GetKeyUp(KeyCode.W))
+=======
+        if (Input.GetAxisRaw("Vertical") > 0)
+>>>>>>> 1be261149554ba9fdd46550c554e3e23e872b8e4
         {
             myAnimator.SetInteger("State", 1);         
         }
 
+<<<<<<< HEAD
         // if (Input.GetKeyUp(KeyCode.W))
         //{
         //  myAnim.SetInteger("State", -1);
         //}
 
         if (Input.GetKeyUp(KeyCode.A))
+=======
+        if (Input.GetAxisRaw("Horizontal") < 0)
+>>>>>>> 1be261149554ba9fdd46550c554e3e23e872b8e4
         {
             myAnimator.SetInteger("State", -2);
         }
 
+<<<<<<< HEAD
         // if (Input.GetKeyUp(KeyCode.A))
         // {
         //myAnim.SetInteger("State", 2);
         //}da
 
         if (Input.GetKeyUp(KeyCode.S))
+=======
+        if (Input.GetAxisRaw("Vertical") < 0)
+>>>>>>> 1be261149554ba9fdd46550c554e3e23e872b8e4
         {
             myAnimator.SetInteger("State", -1);
         }
-
-        //if (Input.GetKeyDown(KeyCode.S))
-        //{
-            //myAnim.SetInteger("State", -3);
-        //}
         
+<<<<<<< HEAD
         if (Input.GetKeyUp(KeyCode.D))
+=======
+        if (Input.GetAxisRaw("Horizontal") > 0)
+>>>>>>> 1be261149554ba9fdd46550c554e3e23e872b8e4
          {
            myAnimator.SetInteger("State", 2);
         }
-
-        //if (Input.GetKeyUp(KeyCode.D))
-        //{
-            //myAnim.SetInteger("State", -2);
-        //}
     }
 
     private void HandleWalkingAnimations()
