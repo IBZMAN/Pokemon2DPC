@@ -22,9 +22,6 @@ public class Player : Character
     [SerializeField]
     public Vector2 position;
 
-    [SerializeField]
-    private float runSpeed;
-
     Animator myAnimator;
 
     // Add mouse wheel to zoom out?
@@ -45,22 +42,17 @@ public class Player : Character
         }
     }
 
-    void Start ()
+    void Start()
     {
         myAnimator = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
-        //gameObject.GetComponent<SpriteRenderer>().sprite = startingSprite;
     }
 
-    void Update ()
+    void Update()
     {
-<<<<<<< HEAD
-        HandleIdleAnimations();
-        HandleWalkingAnimations();
-=======
         GetInput();
 
-        if (IsMoving) 
+        if (IsMoving)
         {
             AnimateMovement(direction);
         }
@@ -70,7 +62,6 @@ public class Player : Character
             myAnimator.SetLayerWeight(1, 0);
         }
 
->>>>>>> 13a1c725ab7ae7552914dede1503dc89f46aa092
     }
 
     void LateUpdate()
@@ -114,7 +105,7 @@ public class Player : Character
         {
             int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "OutsidePokeMart");
             transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
-        }       
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -127,13 +118,9 @@ public class Player : Character
 
     public void AnimateMovement(Vector2 direction)
     {
-<<<<<<< HEAD
-        if (Input.GetAxisRaw("Vertical") > 0)
-=======
         myAnimator.SetLayerWeight(1, 1);
 
         if (IsPressingSprint)
->>>>>>> 13a1c725ab7ae7552914dede1503dc89f46aa092
         {
             myAnimator.SetLayerWeight(2, 1);
         }
@@ -142,10 +129,6 @@ public class Player : Character
             myAnimator.SetLayerWeight(2, 0);
         }
 
-<<<<<<< HEAD
-
-        if (Input.GetAxisRaw("Horizontal") < 0)
-=======
         myAnimator.SetFloat("x", direction.x);
         myAnimator.SetFloat("y", direction.y);
 
@@ -156,7 +139,6 @@ public class Player : Character
         direction = Vector2.zero;
 
         if (Input.GetAxisRaw("Vertical") > 0)
->>>>>>> 13a1c725ab7ae7552914dede1503dc89f46aa092
         {
             direction += Vector2.up;
         }
@@ -167,24 +149,13 @@ public class Player : Character
         }
 
         if (Input.GetAxisRaw("Horizontal") > 0)
-<<<<<<< HEAD
-         {
-           myAnimator.SetInteger("State", 2);
-=======
         {
             direction += Vector2.right;
->>>>>>> 13a1c725ab7ae7552914dede1503dc89f46aa092
         }
 
         if (Input.GetAxisRaw("Horizontal") < 0)
         {
-<<<<<<< HEAD
-            myAnimator.SetLayerWeight(1, 1);
-        }       
-
-=======
             direction += Vector2.left;
         }
->>>>>>> 13a1c725ab7ae7552914dede1503dc89f46aa092
     }
 }

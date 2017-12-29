@@ -5,14 +5,6 @@ public class PlayerMovement : Player
     [SerializeField]
     private float speed;
 
-    public bool IsMoving
-    {
-        get
-        {
-            return direction.x != 0 || direction.y != 0;
-        }
-    }
-
     private bool IsPressingSprint
     {
         get

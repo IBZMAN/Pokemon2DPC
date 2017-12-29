@@ -28,7 +28,7 @@ public class MainMenu : MonoBehaviour {
 
     public void LoadGame()
     {
-        mainMenuUI.SetActive(false);
+        //mainMenuUI.SetActive(false);
         // TO DO - IMPLEMENT LOAD GAME SCREEN       
     }
 
