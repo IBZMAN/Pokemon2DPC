@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player : Character
-{ 
+{
     //[SerializeField]
     //public Sprite startingSprite;
 
@@ -22,6 +22,9 @@ public class Player : Character
     [SerializeField]
     public Vector2 position;
 
+    [SerializeField]
+    private float runSpeed;
+
     Animator myAnimator;
 
     // Add mouse wheel to zoom out?
@@ -34,6 +37,14 @@ public class Player : Character
         }
     }
 
+    public bool IsMoving
+    {
+        get
+        {
+            return direction.x != 0 || direction.y != 0;
+        }
+    }
+
     void Start ()
     {
         myAnimator = GetComponent<Animator>();
@@ -43,8 +54,17 @@ public class Player : Character
 
     void Update ()
     {
-        HandleIdleAnimations();
-        HandleWalkingAnimations();
+        GetInput();
+
+        if (IsMoving) 
+        {
+            AnimateMovement(direction);
+        }
+        else
+        {
+            myAnimator.SetLayerWeight(2, 0);
+            myAnimator.SetLayerWeight(1, 0);
+        }
 
     }
 
@@ -100,62 +120,46 @@ public class Player : Character
         }
     }
 
-    private void HandleIdleAnimations()
+    public void AnimateMovement(Vector2 direction)
     {
-<<<<<<< HEAD
-        if (Input.GetKeyUp(KeyCode.W))
-=======
-        if (Input.GetAxisRaw("Vertical") > 0)
->>>>>>> 1be261149554ba9fdd46550c554e3e23e872b8e4
+        myAnimator.SetLayerWeight(1, 1);
+
+        if (IsPressingSprint)
         {
-            myAnimator.SetInteger("State", 1);         
+            myAnimator.SetLayerWeight(2, 1);
         }
-
-<<<<<<< HEAD
-        // if (Input.GetKeyUp(KeyCode.W))
-        //{
-        //  myAnim.SetInteger("State", -1);
-        //}
-
-        if (Input.GetKeyUp(KeyCode.A))
-=======
-        if (Input.GetAxisRaw("Horizontal") < 0)
->>>>>>> 1be261149554ba9fdd46550c554e3e23e872b8e4
+        else
         {
-            myAnimator.SetInteger("State", -2);
+            myAnimator.SetLayerWeight(2, 0);
         }
 
-<<<<<<< HEAD
-        // if (Input.GetKeyUp(KeyCode.A))
-        // {
-        //myAnim.SetInteger("State", 2);
-        //}da
+        myAnimator.SetFloat("x", direction.x);
+        myAnimator.SetFloat("y", direction.y);
 
-        if (Input.GetKeyUp(KeyCode.S))
-=======
-        if (Input.GetAxisRaw("Vertical") < 0)
->>>>>>> 1be261149554ba9fdd46550c554e3e23e872b8e4
-        {
-            myAnimator.SetInteger("State", -1);
-        }
-        
-<<<<<<< HEAD
-        if (Input.GetKeyUp(KeyCode.D))
-=======
-        if (Input.GetAxisRaw("Horizontal") > 0)
->>>>>>> 1be261149554ba9fdd46550c554e3e23e872b8e4
-         {
-           myAnimator.SetInteger("State", 2);
-        }
     }
 
-    private void HandleWalkingAnimations()
+    void GetInput()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            myAnimator.SetLayerWeight(1, 1);
-        }
-        
+        direction = Vector2.zero;
 
+        if (Input.GetAxisRaw("Vertical") > 0)
+        {
+            direction += Vector2.up;
+        }
+
+        if (Input.GetAxisRaw("Vertical") < 0)
+        {
+            direction += Vector2.down;
+        }
+
+        if (Input.GetAxisRaw("Horizontal") > 0)
+        {
+            direction += Vector2.right;
+        }
+
+        if (Input.GetAxisRaw("Horizontal") < 0)
+        {
+            direction += Vector2.left;
+        }
     }
 }
