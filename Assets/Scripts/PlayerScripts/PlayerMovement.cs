@@ -5,6 +5,10 @@ public class PlayerMovement : Player
     [SerializeField]
     private float speed;
 
+    [Tooltip("To be added to speed")]
+    [SerializeField]
+    private float runSpeed;
+
     private bool IsPressingSprint
     {
         get
@@ -26,7 +30,7 @@ public class PlayerMovement : Player
     {
         if (IsPressingSprint)
         {
-            myRigidBody.velocity = direction.normalized * (speed + 3f);
+            myRigidBody.velocity = direction.normalized * (speed + runSpeed);
         }
         else
         {
