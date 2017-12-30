@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scene/Menus/MainMenu.unity
     guid: eb74df485cc61994dbdcddd8b63bd71a
   - enabled: 1
+    path: Assets/Scene/Inside_Truck.unity
+    guid: 2a8d102757dd4494fbd7dde4251d419c
+  - enabled: 1
     path: Assets/Scene/Fuccsville.unity
     guid: 904f12172670e974081c2457fb3cbc4a
   - enabled: 0
