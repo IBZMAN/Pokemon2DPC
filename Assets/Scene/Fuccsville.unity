@@ -21711,13 +21711,13 @@ Transform:
   m_LocalPosition: {x: 0, y: -19.5, z: 0}
   m_LocalScale: {x: 0.7846792, y: 0.7846792, z: 0.7846792}
   m_Children: []
-<<<<<<< HEAD
+
   m_Father: {fileID: 0}
   m_RootOrder: 7
-=======
+
   m_Father: {fileID: 1294792689}
   m_RootOrder: 8
->>>>>>> 01d773e8d5e34902a81c7567456e1b5360aed6cb
+
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &680377549
 PolygonCollider2D:
@@ -37115,11 +37115,9 @@ Prefab:
     - target: {fileID: 224330179676714190, guid: 6b2fc85758fb99a488bbc8f020c5ad7e,
         type: 2}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
+
       value: 5
-=======
-      value: 0
->>>>>>> 01d773e8d5e34902a81c7567456e1b5360aed6cb
+
       objectReference: {fileID: 0}
     - target: {fileID: 224330179676714190, guid: 6b2fc85758fb99a488bbc8f020c5ad7e,
         type: 2}
