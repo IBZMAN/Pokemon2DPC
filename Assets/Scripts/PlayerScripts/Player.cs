@@ -4,8 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class Player : Character
 {
-    private Vector2 position;
-
     public Vector2 direction;
 
     private Animator myAnimator;
@@ -32,8 +30,7 @@ public class Player : Character
     }
 
     void Start()
-    {
-        
+    {     
         myRigidBody = GetComponent<Rigidbody2D>();
     }
 
@@ -51,11 +48,6 @@ public class Player : Character
             myAnimator.SetLayerWeight(1, 0);
         }
 
-    }
-
-    void LateUpdate()
-    {
-        position = transform.position;
     }
 
     private int GetIndex(List<SpawnPoint> spawnPoints, string name)
