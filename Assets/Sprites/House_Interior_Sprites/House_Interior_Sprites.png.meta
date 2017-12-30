@@ -1,0 +1,880 @@
+fileFormatVersion: 2
+guid: 298727531b4390b4e9ac5f55ff6c2ad3
+timeCreated: 1514657308
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: House_Interior_Sprites_0
+    21300002: House_Interior_Sprites_1
+    21300004: House_Interior_Sprites_2
+    21300006: House_Interior_Sprites_3
+    21300008: House_Interior_Sprites_4
+    21300010: House_Interior_Sprites_5
+    21300012: House_Interior_Sprites_6
+    21300014: House_Interior_Sprites_7
+    21300016: House_Interior_Sprites_8
+    21300018: House_Interior_Sprites_9
+    21300020: House_Interior_Sprites_10
+    21300022: House_Interior_Sprites_11
+    21300024: House_Interior_Sprites_12
+    21300026: House_Interior_Sprites_13
+    21300028: House_Interior_Sprites_14
+    21300030: House_Interior_Sprites_15
+    21300032: House_Interior_Sprites_16
+    21300034: House_Interior_Sprites_17
+    21300036: House_Interior_Sprites_18
+    21300038: House_Interior_Sprites_19
+    21300040: House_Interior_Sprites_20
+    21300042: House_Interior_Sprites_21
+    21300044: House_Interior_Sprites_22
+    21300046: House_Interior_Sprites_23
+    21300048: House_Interior_Sprites_24
+    21300050: House_Interior_Sprites_25
+    21300052: House_Interior_Sprites_26
+    21300054: House_Interior_Sprites_27
+    21300056: House_Interior_Sprites_28
+    21300058: House_Interior_Sprites_29
+    21300060: House_Interior_Sprites_30
+    21300062: House_Interior_Sprites_31
+    21300064: House_Interior_Sprites_32
+    21300066: House_Interior_Sprites_33
+    21300068: House_Interior_Sprites_34
+    21300070: House_Interior_Sprites_35
+    21300072: House_Interior_Sprites_36
+    21300074: House_Interior_Sprites_37
+    21300076: House_Interior_Sprites_38
+    21300078: House_Interior_Sprites_39
+    21300080: House_Interior_Sprites_40
+    21300082: House_Interior_Sprites_41
+    21300084: House_Interior_Sprites_42
+    21300086: House_Interior_Sprites_43
+    21300088: House_Interior_Sprites_44
+    21300090: House_Interior_Sprites_45
+    21300092: House_Interior_Sprites_46
+    21300094: House_Interior_Sprites_47
+    21300096: House_Interior_Sprites_48
+    21300098: House_Interior_Sprites_49
+    21300100: House_Interior_Sprites_50
+    21300102: House_Interior_Sprites_51
+    21300104: House_Interior_Sprites_52
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: House_Interior_Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 554
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 554
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 554
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 554
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 493
+        width: 134
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 507
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 507
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 507
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 507
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 507
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 507
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 507
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 507
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 475
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 475
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 459
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_16
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 467
+        width: 42
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_17
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 467
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_18
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 477
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_19
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 397
+        width: 134
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_20
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 390
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_21
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 443
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_22
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 443
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_23
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 443
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_24
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 443
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_25
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 397
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 391
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_27
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 395
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_28
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 411
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_29
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 411
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_30
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 411
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_31
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 411
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 379
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_33
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 379
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_34
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 379
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_35
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 333
+        width: 92
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_36
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 171
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 171
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_38
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 171
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_39
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 110
+        width: 138
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_40
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 139
+        width: 47
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_41
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 91
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_42
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 91
+        width: 47
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_43
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 42
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_44
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 42
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_45
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 42
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_46
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 42
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_47
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 42
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_48
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 42
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_49
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 42
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_50
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 42
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_51
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 59
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: House_Interior_Sprites_52
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 59
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
