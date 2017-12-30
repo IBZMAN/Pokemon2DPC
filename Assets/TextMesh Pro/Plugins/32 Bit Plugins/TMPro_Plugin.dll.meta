@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 89f0137620f6af44b9ba852b4190e64e
-timeCreated: 1488610019
+guid: 9ddf8fc9040e92c48bfda9aef65aacf8
+timeCreated: 1450988627
 licenseType: Store
 PluginImporter:
   externalObjects: {}
@@ -11,6 +11,24 @@ PluginImporter:
   isOverridable: 0
   platformData:
   - first:
+      '': OSXIntel
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+  - first:
+      '': OSXIntel64
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+  - first:
+      Android: Android
+    second:
+      enabled: 0
+      settings:
+        CPU: AnyCPU
+  - first:
       Any: 
     second:
       enabled: 0
@@ -20,9 +38,9 @@ PluginImporter:
     second:
       enabled: 1
       settings:
-        CPU: AnyCPU
+        CPU: x86
         DefaultValueInitialized: true
-        OS: AnyOS
+        OS: Windows
   - first:
       Facebook: Win
     second:
@@ -48,18 +66,6 @@ PluginImporter:
       settings:
         CPU: x86_64
   - first:
-      Standalone: OSXIntel
-    second:
-      enabled: 0
-      settings:
-        CPU: AnyCPU
-  - first:
-      Standalone: OSXIntel64
-    second:
-      enabled: 0
-      settings:
-        CPU: AnyCPU
-  - first:
       Standalone: Win
     second:
       enabled: 0
@@ -77,6 +83,10 @@ PluginImporter:
       enabled: 0
       settings:
         CPU: AnyCPU
+        DontProcess: False
+        PlaceholderPath: 
+        SDK: AnySDK
+        ScriptingBackend: AnyScriptingBackend
   userData: 
   assetBundleName: 
   assetBundleVariant: 
