@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
 
@@ -34,7 +34,7 @@ public class MainMenu : MonoBehaviour {
 
     public void OpenOptions()
     {
-        // TO DO - IMPLEMENT SETTINGS SCREEN 
+        // TO DO - IMPLEMENT OPTIONS SCREEN 
         //SceneManager.LoadScene("Settings");
     }
 

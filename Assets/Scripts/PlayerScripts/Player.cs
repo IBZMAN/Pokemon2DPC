@@ -4,27 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class Player : Character
 {
-    //[SerializeField]
-    //public Sprite startingSprite;
+    private Vector2 position;
 
-    //[SerializeField]
-    //public Sprite northSprite;
+    public Vector2 direction;
 
-    //[SerializeField]
-    //public Sprite eastSprite;
-
-    //[SerializeField]
-    //public Sprite southSprite;
-
-    //[SerializeField]
-    //public Sprite westSprite;
-
-    [SerializeField]
-    public Vector2 position;
-
-    Animator myAnimator;
-
-    // Add mouse wheel to zoom out?
+    private Animator myAnimator;
 
     private bool IsPressingSprint
     {
@@ -42,9 +26,14 @@ public class Player : Character
         }
     }
 
-    void Start()
+    void Awake()
     {
         myAnimator = GetComponent<Animator>();
+    }
+
+    void Start()
+    {
+        
         myRigidBody = GetComponent<Rigidbody2D>();
     }
 
@@ -87,6 +76,8 @@ public class Player : Character
         {
             int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "InsideHealthCentre");
             transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
+
+            FindObjectOfType<AudioManager>().Play("Littlerot_Town");
         }
 
         if (collision.gameObject.name == "OutsidePokeMart")
@@ -131,7 +122,6 @@ public class Player : Character
 
         myAnimator.SetFloat("x", direction.x);
         myAnimator.SetFloat("y", direction.y);
-
     }
 
     void GetInput()
