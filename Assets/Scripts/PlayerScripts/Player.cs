@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class Player : Character
 {
     public Vector2 direction;
+    public int collectable;
 
     private Animator myAnimator;
 
@@ -88,6 +89,13 @@ public class Player : Character
         {
             int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "OutsidePokeMart");
             transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
+        }
+
+        if (collision.gameObject.tag == "collectable")
+        {
+            Destroy(collision.gameObject);
+            collectable++;
+            
         }
     }
 
