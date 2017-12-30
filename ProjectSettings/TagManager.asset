@@ -18,6 +18,9 @@ TagManager:
   - EnterPokeMart
   - dialogueTrigger
   - spawnPoint
+  - Objects
+  - Floors
+  - Walls
   layers:
   - Default
   - TransparentFX
