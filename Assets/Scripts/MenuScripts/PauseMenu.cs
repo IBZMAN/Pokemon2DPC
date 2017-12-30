@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour {
@@ -9,8 +10,10 @@ public class PauseMenu : MonoBehaviour {
 
     public GameObject pauseMenuUi;
 
-	// Update is called once per frame
-	void Update () {
+    public AudioMixer audioMixer;
+
+    // Update is called once per frame
+    void Update () {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (GameIsPaused)
@@ -53,5 +56,10 @@ public class PauseMenu : MonoBehaviour {
     public void LoadSettings()
     {
         //SceneManager.LoadScene("Settings");
+    }
+
+    public void SetVolume(float volume)
+    {
+        audioMixer.SetFloat("volume", volume);
     }
 }
