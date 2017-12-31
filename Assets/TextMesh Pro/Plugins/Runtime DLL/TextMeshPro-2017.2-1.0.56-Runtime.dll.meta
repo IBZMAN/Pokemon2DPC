@@ -15,28 +15,15 @@ PluginImporter:
     second:
       enabled: 0
       settings:
-        Exclude Android: 0
         Exclude Editor: 1
         Exclude Linux: 0
         Exclude Linux64: 0
         Exclude LinuxUniversal: 0
+        Exclude OSXIntel: 0
+        Exclude OSXIntel64: 0
         Exclude OSXUniversal: 0
-        Exclude WebGL: 0
         Exclude Win: 0
         Exclude Win64: 0
-        Exclude WindowsStoreApps: 0
-  - first:
-      '': OSXIntel
-    second:
-      enabled: 1
-      settings:
-        CPU: AnyCPU
-  - first:
-      '': OSXIntel64
-    second:
-      enabled: 1
-      settings:
-        CPU: AnyCPU
   - first:
       Android: Android
     second:
@@ -104,11 +91,23 @@ PluginImporter:
       settings:
         CPU: 
   - first:
-      Standalone: OSXUniversal
+      Standalone: OSXIntel
     second:
       enabled: 1
       settings:
         CPU: AnyCPU
+  - first:
+      Standalone: OSXIntel64
+    second:
+      enabled: 1
+      settings:
+        CPU: AnyCPU
+  - first:
+      Standalone: OSXUniversal
+    second:
+      enabled: 1
+      settings:
+        CPU: 
   - first:
       Standalone: Win
     second:
