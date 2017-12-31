@@ -31520,6 +31520,12 @@ Transform:
   m_Father: {fileID: 304681304}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &802830149 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114293457412105512, guid: 4d465729ff903394295497e2e5384ffb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1785835576}
+  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
 --- !u!1 &802894056
 GameObject:
   m_ObjectHideFlags: 0
@@ -49433,7 +49439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 691dd673c905ed8449b8d1df18b3db1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 0}
+  nameText: {fileID: 802830149}
   dialogText: {fileID: 1736841525}
   myAnimator: {fileID: 1172643383}
 --- !u!4 &1280489483
@@ -75423,6 +75429,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 0
   m_StereoConvergence: 10
