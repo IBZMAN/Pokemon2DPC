@@ -70,7 +70,7 @@ public class Player : Character
             int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "InsideHealthCentre");
             transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
 
-            FindObjectOfType<AudioManager>().Play("Littlerot_Town");
+            FindObjectOfType<AudioManager>().Play("Door");
         }
 
         if (collision.gameObject.name == "OutsidePokeMart")
@@ -83,6 +83,7 @@ public class Player : Character
         {
             int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "OutsideHealthCentre");
             transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
+            FindObjectOfType<AudioManager>().Play("Door");
         }
 
         if (collision.gameObject.name == "InsidePokeMart")
@@ -104,6 +105,16 @@ public class Player : Character
         if (collision.gameObject.CompareTag("dialogueTrigger"))
         {
             collision.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        // Creates issues when lots of dialogue triggers are close together
+
+        if (collision.gameObject.CompareTag("dialogueTrigger"))
+        {
+            //collision.gameObject.GetComponent<DialogueTrigger>().EndDialogue();
         }
     }
 

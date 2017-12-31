@@ -17,4 +17,9 @@ public class Sound {
 
     [HideInInspector]
     public AudioSource source;
+
+    public AudioMixer audioMixer;
+
+    public bool SFX;
+    public bool Music;
 }

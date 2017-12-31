@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour {
 
@@ -10,7 +10,7 @@ public class AudioManager : MonoBehaviour {
     public static AudioManager instance;
 
     private void Awake()
-    {     
+    {
         if (instance == null)
         {
             instance = this;
@@ -31,6 +31,15 @@ public class AudioManager : MonoBehaviour {
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+
+            if (s.Music)
+            {
+                s.source.outputAudioMixerGroup = s.audioMixer.FindMatchingGroups("Music")[0];
+            }
+            else
+            {
+                s.source.outputAudioMixerGroup = s.audioMixer.FindMatchingGroups("SFX")[0];
+            }
         }
     }
 
