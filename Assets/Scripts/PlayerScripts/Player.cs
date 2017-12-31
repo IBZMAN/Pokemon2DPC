@@ -91,7 +91,26 @@ public class Player : Character
             int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "OutsidePokeMart");
             transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
         }
-
+        if (collision.gameObject.name == "Outside_House")
+        {
+            int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "Inside_House");
+            transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
+        }
+        if (collision.gameObject.name == "Inside_House")
+        {
+            int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "Outside_House");
+            transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
+        }
+        if (collision.gameObject.name == "Transform_Downstairs")
+        {
+            int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "Transform_Upstairs");
+            transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
+        }
+        if (collision.gameObject.name == "Transform_Upstairs")
+        {
+            int index = GetIndex(FindObjectOfType<GameManager>().spawnPoints, "Transform_Downstairs");
+            transform.position = FindObjectOfType<GameManager>().spawnPoints[index].position;
+        }
         if (collision.gameObject.tag == "collectable")
         {
             Destroy(collision.gameObject);
